@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <EditText
+        android:id="@+id/editTextHeightFt"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:layout_alignBaseline="@+id/editTextHeightIn"
+        android:layout_alignBottom="@+id/editTextHeightIn"
+        android:layout_toStartOf="@+id/editTextHeightIn"
+        android:layout_marginEnd="41dp" />
+
+    <EditText
+        android:id="@+id/editTextHeightIn"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:layout_marginTop="75dp"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/textView3"
+        android:layout_marginStart="26dp" />
+
+    <TextView
+        android:id="@+id/textViewHeightFt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ft"
+        android:layout_alignBottom="@+id/editTextHeightFt"
+        android:layout_toEndOf="@+id/editTextWeight" />
+
+    <EditText
+        android:id="@+id/editTextWeight"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:layout_below="@+id/editTextHeightFt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="51dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editTextHeightFt"
+        android:layout_centerHorizontal="true"
+        android:text="BMI Calculator" />
+
+    <Button
+        android:id="@+id/buttonCalculateBMI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editTextWeight"
+        android:layout_alignStart="@+id/editTextHeightIn"
+        android:text="Button" />
+
+    <TextView
+        android:id="@+id/textViewBMI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextWeight"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="77dp"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+        android:text="" />
+
+</RelativeLayout>

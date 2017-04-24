@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_stats"
+            android:title="Stats" />
+        <item
+           android:id="@+id/nav_goals"
+            android:title="Goals" />
+        <item
+            android:id="@+id/nav_add_food"
+            android:title="Add Food Item" />
+    </group>
+
+    <item android:title="Calculator">
+        <menu>
+            <item
+                android:id="@+id/nav_bmi_calculator"
+                android:title="Body Mass Index (BMI)" />
+            <item
+                android:id="@+id/nav_ideal_weight"
+                android:title="Ideal Weight" />
+        </menu>
+    </item>
+
+</menu>
